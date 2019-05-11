@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t vitor/docker-react -f Dockerfile.dev .
+  - docker build -t vitorspk/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run vitor/docker-react npm run test -- --coverage
+  - docker run vitorspk/docker-react npm run test -- --coverage
